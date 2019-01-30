@@ -26,7 +26,7 @@ int guess = Integer.parseInt(boi);
 			// 5. if the guess is correct
 				// 6. Win
 if (guess == random) {
-	JOptionPane.showMessageDialog(null, "winr");
+	JOptionPane.showMessageDialog(null, "WINNER");
 System.exit(0);
 }
 				// 12. Use "System.exit(0);" to quit the game if the user guessed the right answer.
