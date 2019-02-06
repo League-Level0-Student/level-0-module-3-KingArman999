@@ -2,6 +2,8 @@
 //    Level 0
 package extra;
 
+import java.net.URI;
+
 import javax.swing.JOptionPane;
 
 public class BananaQuiz {
@@ -19,12 +21,21 @@ public class BananaQuiz {
 		// show a pop up that says “You are bananas!�?
 		String banana = JOptionPane.showInputDialog(null, "Do you like Bananas?");
 		if (banana.equals("No")) {
-			JOptionPane.showMessageDialog(null, "You are Crazy!");
+			playVideo(https://www.youtube.com/watch?v=7fFSupGfZME);
+		
 		}
-
-		if (banana.equals("Yes")) ;{
+		else if (banana.equals("Yes")) ;{
 			String hobby = JOptionPane.showInputDialog("What's your favorite hobby?");
 			 JOptionPane.showMessageDialog(null, hobby + " is much better with bananas." );
+		}
+	}
+
+	static void playVideo(String videoURL) {
+		try {
+			URI uri = new URI(videoURL);
+			java.awt.Desktop.getDesktop().browse(uri);
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
 	}
 }

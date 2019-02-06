@@ -4,6 +4,8 @@
 
 package loops;
 
+import javax.swing.plaf.basic.BasicInternalFrameTitlePane.MoveAction;
+
 import org.jointheleague.graphical.robot.Robot;
 
 public class WalkOfFame {
@@ -11,9 +13,21 @@ public class WalkOfFame {
 		Robot rob = new Robot();
 		// 1. Set the X position of the robot so that it starts on the left. 
 		// You also need to show the robot to see the result of this line.
-
+		rob.moveTo(200, 200);
 		// 2. Make the robot draw a star shape. Hint: 144.
-
+	for (int i = 0; i < 10; i++) {
+		for (int b = 0; b < 5; b++) {
+			rob.setRandomPenColor();
+			rob.setSpeed(250);
+			rob.penDown();
+			rob.move(40);
+			rob.turn(144);
+			
+		}
+		rob.penUp();
+		rob.setAngle(90);
+		rob.move(50);
+		}
 		// 3. Set the size of the star to 30.
 
 		/** THE CHALLENGE: **/
