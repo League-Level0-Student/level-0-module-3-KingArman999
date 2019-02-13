@@ -21,7 +21,7 @@ public class BananaQuiz {
 		// show a pop up that says “You are bananas!�?
 		String banana = JOptionPane.showInputDialog(null, "Do you like Bananas?");
 		if (banana.equals("No")) {
-			playVideo(https://www.youtube.com/watch?v=7fFSupGfZME);
+			playVideo("https://www.youtube.com/watch?v=7fFSupGfZME");
 		
 		}
 		else if (banana.equals("Yes")) ;{
